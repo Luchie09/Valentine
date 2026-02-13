@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Soft romantic gradient background */
+section {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ff4d6d, #c9184a, #800f2f);
+    overflow: hidden;
+}
+
+/* Optional background video (hidden by default) */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.video-background video {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Main Card */
+.container {
+    height: 70%;
+    width: 33%;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    transition: 0.3s ease;
+}
+
+/* Image Section */
+.image-box {
+    height: 70%;
+    width: 100%;
+}
+
+.actual-image {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gif {
+    height: 90%;
+    width: 64%;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Text Section */
+.text-one {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#text {
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+}
+
+/* Buttons Section */
+.yes-no {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* YES Button */
+.yes {
+    font-family: "Allura", cursive;
+    font-size: 6vh;
+    height: 60%;
+    width: 40%;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(145deg, #ff758f, #ff4d6d);
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+}
+
+/* NO Button */
+.no {
+    font-family: "Allura", cursive;
+    font-size: 6vh;
+    height: 60%;
+    width: 40%;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(145deg, #a4133c, #800f2f);
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+}
+
+/* Hover Effects */
+.yes:hover {
+    transform: translateY(-4px) scale(1.05);
+}
+
+.no:hover {
+    transform: translateY(-4px) scale(1.05);
+    opacity: 0.9;
+}
+
+/* Mobile Responsive */
+@media (min-width:200px) and (max-width:1025px) {
+    .container {
+        height: 80%;
+        width: 95%;
+    }
+    .gif {
+        height: 90%;
+        width: 80%;
+    }
+}
